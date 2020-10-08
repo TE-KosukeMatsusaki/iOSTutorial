@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController" customModule="sample_app" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6HS-Fi-Uha" userLabel="Contents View">
+                    <rect key="frame" x="0.0" y="198" width="414" height="500"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="SecondViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKJ-TQ-bH6">
+                            <rect key="frame" x="124" y="40" width="166.5" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="BDE-ta-kRf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxg-h2-rml" userLabel="Main Button">
+                            <rect key="frame" x="167" y="364" width="81" height="36"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="FYA-ff-rho"/>
+                                <constraint firstAttribute="height" constant="36" id="eP2-0e-p8W"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                            <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                            <state key="normal" title="Mainへ">
+                                <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Lxg-h2-rml" firstAttribute="centerX" secondItem="6HS-Fi-Uha" secondAttribute="centerX" id="Lp0-N4-0dI"/>
+                        <constraint firstItem="Lxg-h2-rml" firstAttribute="bottom" secondItem="B50-w7-Vf2" secondAttribute="bottom" constant="-100" id="M6d-FP-EJR"/>
+                        <constraint firstAttribute="height" constant="500" id="fw4-9n-2eo"/>
+                        <constraint firstItem="SKJ-TQ-bH6" firstAttribute="top" secondItem="6HS-Fi-Uha" secondAttribute="top" constant="40" id="mbv-1D-5eH"/>
+                        <constraint firstItem="SKJ-TQ-bH6" firstAttribute="centerX" secondItem="6HS-Fi-Uha" secondAttribute="centerX" id="zCY-Vc-vh1"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="B50-w7-Vf2"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6HS-Fi-Uha" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8Nf-u8-j2z"/>
+                <constraint firstItem="6HS-Fi-Uha" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Jj1-S7-M1t"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="141"/>
+        </view>
+    </objects>
+</document>
