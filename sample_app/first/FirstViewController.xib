@@ -8,9 +8,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="sample_app" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController" customModule="sample_app" customModuleProvider="target">
             <connections>
-                <outlet property="firstContentsView" destination="J2e-tG-7IJ" id="wEJ-cX-K0g"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,48 +18,48 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view alpha="0.80000000000000004" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J2e-tG-7IJ" userLabel="Contents View">
+                <view alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9P3-Ep-nx0" userLabel="Contents View">
                     <rect key="frame" x="0.0" y="198" width="414" height="500"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="MainViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9I-QA-2C0">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="FirstViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXL-4o-6Df">
                             <rect key="frame" x="122" y="40" width="170" height="36"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="36" id="hdY-Qg-TsH"/>
+                                <constraint firstAttribute="height" constant="36" id="EOi-Gv-Hcl"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANZ-Va-Hof" userLabel="First Button">
-                            <rect key="frame" x="168" y="364" width="78" height="36"/>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o4m-fh-yMM" userLabel="First Button">
+                            <rect key="frame" x="157" y="364" width="100" height="36"/>
                             <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="36" id="IgG-Tf-Zl0"/>
+                                <constraint firstAttribute="height" constant="36" id="iig-fu-DsZ"/>
                             </constraints>
                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                             <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
-                            <state key="normal" title="Firstへ">
+                            <state key="normal" title="Secondへ">
                                 <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </state>
                         </button>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="r9I-QA-2C0" firstAttribute="centerX" secondItem="J2e-tG-7IJ" secondAttribute="centerX" id="5JE-V7-1OI"/>
-                        <constraint firstItem="r9I-QA-2C0" firstAttribute="top" secondItem="J2e-tG-7IJ" secondAttribute="top" constant="40" id="Dge-xU-Qi5"/>
-                        <constraint firstAttribute="height" constant="500" id="FCz-u4-67H"/>
-                        <constraint firstItem="ANZ-Va-Hof" firstAttribute="bottom" secondItem="a9O-mJ-9t4" secondAttribute="bottom" constant="-100" id="KCM-rT-Ufc"/>
-                        <constraint firstItem="ANZ-Va-Hof" firstAttribute="centerX" secondItem="J2e-tG-7IJ" secondAttribute="centerX" id="noe-bJ-Mef"/>
+                        <constraint firstItem="o4m-fh-yMM" firstAttribute="centerX" secondItem="9P3-Ep-nx0" secondAttribute="centerX" id="02G-KN-Akh"/>
+                        <constraint firstItem="iXL-4o-6Df" firstAttribute="centerX" secondItem="9P3-Ep-nx0" secondAttribute="centerX" id="3RQ-S6-K5k"/>
+                        <constraint firstItem="o4m-fh-yMM" firstAttribute="bottom" secondItem="kT3-7B-8OY" secondAttribute="bottom" constant="-100" id="6nY-oH-mns"/>
+                        <constraint firstAttribute="height" constant="500" id="b2S-Uz-GvH"/>
+                        <constraint firstItem="iXL-4o-6Df" firstAttribute="top" secondItem="9P3-Ep-nx0" secondAttribute="top" constant="40" id="pTG-jP-pRE"/>
                     </constraints>
-                    <viewLayoutGuide key="safeArea" id="a9O-mJ-9t4"/>
+                    <viewLayoutGuide key="safeArea" id="kT3-7B-8OY"/>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="J2e-tG-7IJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ScK-dB-xTR"/>
-                <constraint firstItem="J2e-tG-7IJ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="o7X-rF-tm5"/>
+                <constraint firstItem="9P3-Ep-nx0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CAC-12-LES"/>
+                <constraint firstItem="9P3-Ep-nx0" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="e4i-yS-T5V"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
+            <point key="canvasLocation" x="139" y="141"/>
         </view>
     </objects>
 </document>
