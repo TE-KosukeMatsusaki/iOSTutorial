@@ -14,6 +14,7 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "second"
         mainButton.addTarget(self, action: #selector(backToTopViewController), for: .touchDown)
     }
 

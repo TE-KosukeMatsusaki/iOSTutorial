@@ -28,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let appearance = UINavigationBar.appearance()
         appearance.barTintColor = UIColor.systemGray
         appearance.tintColor = UIColor.white
+        appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
    
 
