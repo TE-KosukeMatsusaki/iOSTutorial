@@ -15,6 +15,7 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "second"
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         mainButton.addTarget(self, action: #selector(backToTopViewController), for: .touchDown)
     }
 
