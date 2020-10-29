@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="sample_app" customModuleProvider="target">
             <connections>
                 <outlet property="firstContentsView" destination="J2e-tG-7IJ" id="wEJ-cX-K0g"/>
+                <outlet property="mainLabel" destination="r9I-QA-2C0" id="Ya2-Ss-2xU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,10 +20,10 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view alpha="0.80000000000000004" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J2e-tG-7IJ" userLabel="Contents View">
+                <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J2e-tG-7IJ" userLabel="Contents View">
                     <rect key="frame" x="0.0" y="198" width="414" height="500"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="MainViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9I-QA-2C0">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MainViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9I-QA-2C0">
                             <rect key="frame" x="122" y="40" width="170" height="36"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="36" id="hdY-Qg-TsH"/>
@@ -31,7 +32,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Hy-48-cYL" userLabel="First Button">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Hy-48-cYL" userLabel="First Button">
                             <rect key="frame" x="157" y="328" width="100" height="36"/>
                             <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
@@ -43,8 +44,11 @@
                             <state key="normal" title="Firstへ">
                                 <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </state>
+                            <connections>
+                                <action selector="clickFirstButton:" destination="-1" eventType="touchDown" id="aQw-Xx-4SA"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANZ-Va-Hof" userLabel="Second Button">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANZ-Va-Hof" userLabel="Second Button">
                             <rect key="frame" x="157" y="404" width="100" height="36"/>
                             <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
@@ -56,6 +60,9 @@
                             <state key="normal" title="Secondへ">
                                 <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </state>
+                            <connections>
+                                <action selector="clickSecondButton:" destination="-1" eventType="touchDown" id="drK-u2-qCj"/>
+                            </connections>
                         </button>
                     </subviews>
                     <constraints>
@@ -72,6 +79,7 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="J2e-tG-7IJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HDP-YH-Tef"/>
                 <constraint firstItem="J2e-tG-7IJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ScK-dB-xTR"/>
                 <constraint firstItem="J2e-tG-7IJ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="o7X-rF-tm5"/>
             </constraints>

@@ -10,6 +10,8 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var mainLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -19,6 +21,25 @@ class MainViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func showFirstViewController() {
+        navigationController?.pushViewController(FirstViewController(), animated: true)
+    }
+    
+    func showSecondViewController() {
+        navigationController?.pushViewController(SecondViewController(), animated: true)
+    }
+    
+    @IBAction func clickFirstButton(_ sender: Any) {
+        mainLabel.text = "Move to First"
+        showFirstViewController()
+    }
+    
+    @IBAction func clickSecondButton(_ sender: Any) {
+        mainLabel.text = "Move to Second"
+        showSecondViewController()
+        
     }
     
     @IBOutlet weak var firstContentsView: UIView!
