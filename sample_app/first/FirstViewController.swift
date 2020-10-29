@@ -10,13 +10,17 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    @IBOutlet weak var secondButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        secondButton.addTarget(self, action: #selector(showSecondViewController), for: .touchDown)
         // Do any additional setup after loading the view.
     }
 
-
+    @objc func showSecondViewController() {
+        navigationController?.pushViewController(SecondViewController(), animated: true)
+    }
     /*
     // MARK: - Navigation
 
