@@ -19,8 +19,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = UINavigationController(rootViewController: MainViewController())
         self.window?.makeKeyAndVisible()
+        
+        setNavigationBar()
         return true
     }
+    
+    private func setNavigationBar() {
+        let appearance = UINavigationBar.appearance()
+        appearance.barTintColor = UIColor.systemGray
+        appearance.tintColor = UIColor.white
+    }
+   
+
+    
+    
 
 
 }
