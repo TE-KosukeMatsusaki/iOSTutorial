@@ -10,12 +10,16 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var mainButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        mainButton.addTarget(self, action: #selector(backToTopViewController), for: .touchDown)
     }
 
+    @objc func backToTopViewController() {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
 
     /*
     // MARK: - Navigation
