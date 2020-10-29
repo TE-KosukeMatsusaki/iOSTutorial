@@ -11,11 +11,11 @@ import UIKit
 class MainViewController: UIViewController {
 
     @IBOutlet weak var mainLabel: UILabel!
+    @IBOutlet weak var secondButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        // Do any additional setup after loading the view.
+        secondButton.addTarget(self, action: #selector(showSecondViewController), for: .touchDown)
         
     }
 
@@ -27,7 +27,7 @@ class MainViewController: UIViewController {
         navigationController?.pushViewController(FirstViewController(), animated: true)
     }
     
-    func showSecondViewController() {
+    @objc func showSecondViewController() {
         navigationController?.pushViewController(SecondViewController(), animated: true)
     }
     
@@ -36,14 +36,6 @@ class MainViewController: UIViewController {
         showFirstViewController()
     }
     
-    @IBAction func clickSecondButton(_ sender: Any) {
-        mainLabel.text = "Move to Second"
-        showSecondViewController()
-        
-    }
-    
-    @IBOutlet weak var firstContentsView: UIView!
-   
     
     /*
     // MARK: - Navigation
