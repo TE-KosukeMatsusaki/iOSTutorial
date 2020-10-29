@@ -10,7 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="sample_app" customModuleProvider="target">
             <connections>
-                <outlet property="mainLabel" destination="r9I-QA-2C0" id="Ya2-Ss-2xU"/>
                 <outlet property="secondButton" destination="ANZ-Va-Hof" id="jLJ-0F-yWf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,10 +22,11 @@
                 <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J2e-tG-7IJ" userLabel="Contents View">
                     <rect key="frame" x="0.0" y="198" width="414" height="500"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MainViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9I-QA-2C0">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MainViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9I-QA-2C0">
                             <rect key="frame" x="122" y="40" width="170" height="36"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="36" id="hdY-Qg-TsH"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="jL5-Qp-B4h"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <nil key="textColor"/>

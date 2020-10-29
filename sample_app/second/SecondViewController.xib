@@ -22,10 +22,11 @@
                 <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6HS-Fi-Uha" userLabel="Contents View">
                     <rect key="frame" x="0.0" y="198" width="414" height="500"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SecondViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKJ-TQ-bH6">
-                            <rect key="frame" x="124" y="40" width="166" height="36"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKJ-TQ-bH6">
+                            <rect key="frame" x="109.5" y="40" width="195" height="36"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="36" id="BDE-ta-kRf"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="sC1-gI-zhy"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <nil key="textColor"/>
@@ -48,7 +49,6 @@
                     <constraints>
                         <constraint firstItem="Lxg-h2-rml" firstAttribute="centerX" secondItem="6HS-Fi-Uha" secondAttribute="centerX" id="Lp0-N4-0dI"/>
                         <constraint firstItem="Lxg-h2-rml" firstAttribute="bottom" secondItem="B50-w7-Vf2" secondAttribute="bottom" constant="-100" id="M6d-FP-EJR"/>
-                        <constraint firstItem="SKJ-TQ-bH6" firstAttribute="leading" secondItem="B50-w7-Vf2" secondAttribute="leading" constant="124" id="MEv-IO-L9W"/>
                         <constraint firstAttribute="height" constant="500" id="fw4-9n-2eo"/>
                         <constraint firstItem="SKJ-TQ-bH6" firstAttribute="top" secondItem="6HS-Fi-Uha" secondAttribute="top" constant="40" id="mbv-1D-5eH"/>
                         <constraint firstItem="SKJ-TQ-bH6" firstAttribute="centerX" secondItem="6HS-Fi-Uha" secondAttribute="centerX" id="zCY-Vc-vh1"/>
