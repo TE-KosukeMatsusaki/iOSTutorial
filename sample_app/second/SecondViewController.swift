@@ -22,4 +22,12 @@ class SecondViewController: UIViewController {
     @objc func backToTopViewController() {
         self.navigationController?.popToRootViewController(animated: true)
     }
+    
+    func showScrollViewController() {
+        navigationController?.pushViewController(ScrollViewController(), animated: true)
+    }
+    
+    @IBAction func clickScrollButton(_ sender: Any) {
+        showScrollViewController()
+    }
 }

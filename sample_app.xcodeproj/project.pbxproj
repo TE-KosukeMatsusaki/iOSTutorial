@@ -19,6 +19,8 @@
 		3C3073DB252ECABB0075AF72 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C3073D9252ECABB0075AF72 /* FirstViewController.xib */; };
 		3C3073DE252ECB870075AF72 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3073DC252ECB870075AF72 /* SecondViewController.swift */; };
 		3C3073DF252ECB870075AF72 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C3073DD252ECB870075AF72 /* SecondViewController.xib */; };
+		3CB812F6254BBD9D004E3FD8 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB812F4254BBD9D004E3FD8 /* ScrollViewController.swift */; };
+		3CB812F7254BBD9D004E3FD8 /* ScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CB812F5254BBD9D004E3FD8 /* ScrollViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		3C3073D9252ECABB0075AF72 /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
 		3C3073DC252ECB870075AF72 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3C3073DD252ECB870075AF72 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		3CB812F4254BBD9D004E3FD8 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		3CB812F5254BBD9D004E3FD8 /* ScrollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 				3C3073C2252DBA390075AF72 /* main */,
 				3C3073D4252EAEC80075AF72 /* first */,
 				3C3073D5252EAEDC0075AF72 /* second */,
+				3CB812F1254BBC39004E3FD8 /* uiScrollView */,
 				3C307392252DB3740075AF72 /* AppDelegate.swift */,
 				3C307398252DB3770075AF72 /* Assets.xcassets */,
 				3C30739D252DB3770075AF72 /* LaunchScreen.storyboard */,
@@ -170,6 +175,15 @@
 				3C3073DD252ECB870075AF72 /* SecondViewController.xib */,
 			);
 			path = second;
+			sourceTree = "<group>";
+		};
+		3CB812F1254BBC39004E3FD8 /* uiScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				3CB812F4254BBD9D004E3FD8 /* ScrollViewController.swift */,
+				3CB812F5254BBD9D004E3FD8 /* ScrollViewController.xib */,
+			);
+			path = uiScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +293,7 @@
 				3C30739F252DB3770075AF72 /* LaunchScreen.storyboard in Resources */,
 				3C3073DB252ECABB0075AF72 /* FirstViewController.xib in Resources */,
 				3C3073DF252ECB870075AF72 /* SecondViewController.xib in Resources */,
+				3CB812F7254BBD9D004E3FD8 /* ScrollViewController.xib in Resources */,
 				3C3073D3252DC2F30075AF72 /* MainViewController.xib in Resources */,
 				3C30739C252DB3770075AF72 /* Preview Assets.xcassets in Resources */,
 				3C307399252DB3770075AF72 /* Assets.xcassets in Resources */,
@@ -308,6 +323,7 @@
 			files = (
 				3C3073DE252ECB870075AF72 /* SecondViewController.swift in Sources */,
 				3C3073DA252ECABB0075AF72 /* FirstViewController.swift in Sources */,
+				3CB812F6254BBD9D004E3FD8 /* ScrollViewController.swift in Sources */,
 				3C307393252DB3740075AF72 /* AppDelegate.swift in Sources */,
 				3C3073D2252DC2F30075AF72 /* MainViewController.swift in Sources */,
 			);
