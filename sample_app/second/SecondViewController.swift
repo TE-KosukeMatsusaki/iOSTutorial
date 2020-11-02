@@ -23,11 +23,11 @@ class SecondViewController: UIViewController {
         self.navigationController?.popToRootViewController(animated: true)
     }
     
-    func showScrollViewController() {
+    func showTableViewController() {
         navigationController?.pushViewController(TableViewController(), animated: true)
     }
     
     @IBAction func clickScrollButton(_ sender: Any) {
-        showScrollViewController()
+        showTableViewController()
     }
 }

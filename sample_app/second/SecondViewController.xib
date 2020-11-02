@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -32,9 +33,9 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxg-h2-rml" userLabel="Main Button">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxg-h2-rml" userLabel="Main Button">
                             <rect key="frame" x="157" y="328" width="100" height="36"/>
-                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="100" id="FYA-ff-rho"/>
                                 <constraint firstAttribute="height" constant="36" id="eP2-0e-p8W"/>
@@ -42,26 +43,27 @@
                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                             <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                             <state key="normal" title="Mainへ">
-                                <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
                             </state>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ube-fm-Y8x" userLabel="Scroll Button">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ube-fm-Y8x" userLabel="Scroll Button">
                             <rect key="frame" x="157" y="404" width="100" height="36"/>
-                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="100" id="ABE-hd-IcR"/>
                                 <constraint firstAttribute="height" constant="36" id="rJd-P2-EHR"/>
                             </constraints>
                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                             <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
-                            <state key="normal" title="Scrollへ">
-                                <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <state key="normal" title="Tableへ">
+                                <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
                             </state>
                             <connections>
                                 <action selector="clickScrollButton:" destination="-1" eventType="touchUpInside" id="Nsx-2S-j9Z"/>
                             </connections>
                         </button>
                     </subviews>
+                    <viewLayoutGuide key="safeArea" id="B50-w7-Vf2"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="ube-fm-Y8x" secondAttribute="bottom" constant="60" id="JSL-Kc-GQB"/>
                         <constraint firstItem="Lxg-h2-rml" firstAttribute="centerX" secondItem="6HS-Fi-Uha" secondAttribute="centerX" id="Lp0-N4-0dI"/>
@@ -71,17 +73,27 @@
                         <constraint firstItem="ube-fm-Y8x" firstAttribute="centerX" secondItem="6HS-Fi-Uha" secondAttribute="centerX" id="wdq-9g-SPQ"/>
                         <constraint firstItem="SKJ-TQ-bH6" firstAttribute="centerX" secondItem="6HS-Fi-Uha" secondAttribute="centerX" id="zCY-Vc-vh1"/>
                     </constraints>
-                    <viewLayoutGuide key="safeArea" id="B50-w7-Vf2"/>
                 </view>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="6HS-Fi-Uha" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8Nf-u8-j2z"/>
                 <constraint firstItem="6HS-Fi-Uha" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="IVU-g3-a16"/>
                 <constraint firstItem="6HS-Fi-Uha" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Jj1-S7-M1t"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="139" y="141"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

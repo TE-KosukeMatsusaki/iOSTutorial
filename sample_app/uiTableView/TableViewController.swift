@@ -23,8 +23,13 @@ class TableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "日本昔話一覧"
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
-
+    
+    private func showScrollView(title: String){
+        let toVC = ScrollViewController(title: title)
+        navigationController?.pushViewController(toVC, animated: true)
+    }
 }
 
 extension TableViewController: UITableViewDataSource {
@@ -33,9 +38,9 @@ extension TableViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
         let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(TableViewCell.self), for: indexPath)
         cell.textLabel?.text = items[indexPath.row]
+        cell.accessoryType = TableViewCell.AccessoryType.disclosureIndicator
         return cell
     }
 }
@@ -43,6 +48,13 @@ extension TableViewController: UITableViewDataSource {
 extension TableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        navigationController?.pushViewController(ScrollViewController(), animated: true)
+        switch indexPath.row {
+            case 0:
+                showScrollView(title: "momotaro")
+            case 1:
+                showScrollView(title: "urasimataro")
+            default:
+                showScrollView(title: "kintaro")
+        }
     }
 }
