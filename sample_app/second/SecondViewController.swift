@@ -24,7 +24,7 @@ class SecondViewController: UIViewController {
     }
     
     func showScrollViewController() {
-        navigationController?.pushViewController(ScrollViewController(), animated: true)
+        navigationController?.pushViewController(TableViewController(), animated: true)
     }
     
     @IBAction func clickScrollButton(_ sender: Any) {
