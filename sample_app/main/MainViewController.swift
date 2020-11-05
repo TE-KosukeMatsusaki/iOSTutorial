@@ -53,8 +53,12 @@ class MainViewController: UIViewController {
 // MARK: - OriginalDelegate
 
 extension MainViewController: OriginalDelegate {
-    func buttonTap() {
-        NSLog("buttonTap")
+    func firstButtonTap() {
+        NSLog("First Button Tap")
         showFirstViewController()
+    }
+    func secondButtonTap() {
+        NSLog("Second Button Tap")
+        showSecondViewController()
     }
 }

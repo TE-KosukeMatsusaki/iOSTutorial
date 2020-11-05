@@ -29,7 +29,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlT-Nf-YFp" userLabel="First Button">
-                            <rect key="frame" x="157" y="214" width="100" height="36"/>
+                            <rect key="frame" x="50" y="214" width="100" height="36"/>
                             <color key="backgroundColor" systemColor="systemBlueColor"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="100" id="AJo-GV-PJG"/>
@@ -44,15 +44,28 @@
                                 <action selector="clickFirstButton:" destination="iN0-l3-epB" eventType="touchDown" id="SLc-sE-sxb"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1V-r6-GXM" userLabel="Second Button">
+                            <rect key="frame" x="264" y="214" width="100" height="36"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="c1w-xd-VEP"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="ttL-jL-c6i"/>
+                            </constraints>
+                            <state key="normal" title="Secondへ">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
                     </subviews>
                     <viewLayoutGuide key="safeArea" id="j7G-vJ-5dJ"/>
                     <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     <constraints>
                         <constraint firstItem="lSk-35-8di" firstAttribute="top" secondItem="bne-lq-wjn" secondAttribute="top" constant="40" id="BWW-Fp-CpZ"/>
                         <constraint firstItem="lSk-35-8di" firstAttribute="centerX" secondItem="bne-lq-wjn" secondAttribute="centerX" id="FcU-2o-2qA"/>
-                        <constraint firstItem="tlT-Nf-YFp" firstAttribute="centerX" secondItem="bne-lq-wjn" secondAttribute="centerX" id="Kzi-IZ-Vi1"/>
+                        <constraint firstItem="tlT-Nf-YFp" firstAttribute="leading" secondItem="bne-lq-wjn" secondAttribute="leading" constant="50" id="Q3x-lE-8iC"/>
                         <constraint firstAttribute="bottom" secondItem="tlT-Nf-YFp" secondAttribute="bottom" constant="50" id="Rjm-We-0Sb"/>
                         <constraint firstItem="lSk-35-8di" firstAttribute="leading" secondItem="j7G-vJ-5dJ" secondAttribute="leading" constant="113.5" id="Xrd-Dk-W99"/>
+                        <constraint firstAttribute="bottom" secondItem="E1V-r6-GXM" secondAttribute="bottom" constant="50" id="Yop-n9-drU"/>
+                        <constraint firstItem="j7G-vJ-5dJ" firstAttribute="trailing" secondItem="E1V-r6-GXM" secondAttribute="trailing" constant="50" id="exE-Wa-7NY"/>
                         <constraint firstAttribute="height" constant="300" id="yAX-Jx-Tc8"/>
                     </constraints>
                 </view>
@@ -64,6 +77,9 @@
                 <constraint firstItem="bne-lq-wjn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qdd-FD-TfA"/>
                 <constraint firstItem="bne-lq-wjn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qeA-cw-7Vq"/>
             </constraints>
+            <connections>
+                <outlet property="secondButton" destination="E1V-r6-GXM" id="gbm-4D-p6n"/>
+            </connections>
             <point key="canvasLocation" x="141" y="67"/>
         </view>
     </objects>
