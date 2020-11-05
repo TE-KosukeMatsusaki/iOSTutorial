@@ -66,6 +66,8 @@
                         <constraint firstItem="lSk-35-8di" firstAttribute="leading" secondItem="j7G-vJ-5dJ" secondAttribute="leading" constant="113.5" id="Xrd-Dk-W99"/>
                         <constraint firstAttribute="bottom" secondItem="E1V-r6-GXM" secondAttribute="bottom" constant="50" id="Yop-n9-drU"/>
                         <constraint firstItem="j7G-vJ-5dJ" firstAttribute="trailing" secondItem="E1V-r6-GXM" secondAttribute="trailing" constant="50" id="exE-Wa-7NY"/>
+                        <constraint firstItem="E1V-r6-GXM" firstAttribute="top" secondItem="tlT-Nf-YFp" secondAttribute="top" id="lS3-tp-Gif"/>
+                        <constraint firstItem="E1V-r6-GXM" firstAttribute="height" secondItem="tlT-Nf-YFp" secondAttribute="height" id="tQW-eG-sI2"/>
                         <constraint firstAttribute="height" constant="300" id="yAX-Jx-Tc8"/>
                     </constraints>
                 </view>
@@ -80,7 +82,7 @@
             <connections>
                 <outlet property="secondButton" destination="E1V-r6-GXM" id="gbm-4D-p6n"/>
             </connections>
-            <point key="canvasLocation" x="141" y="67"/>
+            <point key="canvasLocation" x="140.57971014492756" y="66.964285714285708"/>
         </view>
     </objects>
     <resources>

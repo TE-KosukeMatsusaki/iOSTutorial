@@ -40,6 +40,14 @@ class MainViewController: UIViewController {
         delegateView.center = view.center
         view.addSubview(delegateView)
     }
+    
+    private func removeOriginalDelegateView() {
+        for subView in view.subviews {
+            if type(of: subView) == OriginalDelegateView.self {
+                subView.isHidden = true
+            }
+        }
+    }
 
     @IBAction func clickFirstButton(_ sender: Any) {
         showFirstViewController()
@@ -55,10 +63,12 @@ class MainViewController: UIViewController {
 extension MainViewController: OriginalDelegate {
     func firstButtonTap() {
         NSLog("First Button Tap")
+        removeOriginalDelegateView()
         showFirstViewController()
     }
     func secondButtonTap() {
         NSLog("Second Button Tap")
+        removeOriginalDelegateView()
         showSecondViewController()
     }
 }

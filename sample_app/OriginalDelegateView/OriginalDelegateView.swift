@@ -29,10 +29,6 @@ class OriginalDelegateView: UIView, UIGestureRecognizerDelegate {
     }
 
     // MARK: - Event
-    @objc func firstButtonTap(_ sender: UITapGestureRecognizer) {
-        delegate?.firstButtonTap()
-    }
-    
     @objc func secondButtonTap(_ sender: UITapGestureRecognizer) {
         delegate?.secondButtonTap()
     }
