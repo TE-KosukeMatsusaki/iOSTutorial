@@ -10,6 +10,7 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var contentsView: UIView!
     @IBOutlet weak var secondButton: UIButton!
     
     override func viewDidLoad() {
@@ -32,7 +33,28 @@ class MainViewController: UIViewController {
         navigationController?.pushViewController(SecondViewController(), animated: true)
     }
     
+    private func showDelegateView() {
+        let nib = UINib(nibName: "OriginalDelegateView", bundle: Bundle(for: type(of: self)))
+        let delegateView = nib.instantiate(withOwner: self, options: nil).first as! OriginalDelegateView
+        delegateView.delegate = self
+        delegateView.center = view.center
+        view.addSubview(delegateView)
+    }
+
     @IBAction func clickFirstButton(_ sender: Any) {
+        showFirstViewController()
+    }
+    
+    @IBAction func clickDelegateButton(_ sender: Any) {
+        showDelegateView()
+    }
+}
+
+// MARK: - OriginalDelegate
+
+extension MainViewController: OriginalDelegate {
+    func buttonTap() {
+        NSLog("buttonTap")
         showFirstViewController()
     }
 }

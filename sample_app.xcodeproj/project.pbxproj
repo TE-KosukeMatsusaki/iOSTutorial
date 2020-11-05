@@ -23,6 +23,8 @@
 		3CAA71F0254FAA21008FBEEE /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CAA71EE254FAA21008FBEEE /* TableViewController.xib */; };
 		3CAA71FC254FB83E008FBEEE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA71FA254FB83E008FBEEE /* TableViewCell.swift */; };
 		3CAA71FD254FB83E008FBEEE /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CAA71FB254FB83E008FBEEE /* TableViewCell.xib */; };
+		3CAA722F254FF449008FBEEE /* OriginalDelegateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA722E254FF449008FBEEE /* OriginalDelegateView.swift */; };
+		3CAA723A254FF48C008FBEEE /* OriginalDelegateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CAA7239254FF48C008FBEEE /* OriginalDelegateView.xib */; };
 		3CB812F6254BBD9D004E3FD8 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB812F4254BBD9D004E3FD8 /* ScrollViewController.swift */; };
 		3CB812F7254BBD9D004E3FD8 /* ScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CB812F5254BBD9D004E3FD8 /* ScrollViewController.xib */; };
 /* End PBXBuildFile section */
@@ -67,6 +69,8 @@
 		3CAA71EE254FAA21008FBEEE /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
 		3CAA71FA254FB83E008FBEEE /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3CAA71FB254FB83E008FBEEE /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		3CAA722E254FF449008FBEEE /* OriginalDelegateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalDelegateView.swift; sourceTree = "<group>"; };
+		3CAA7239254FF48C008FBEEE /* OriginalDelegateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OriginalDelegateView.xib; sourceTree = "<group>"; };
 		3CB812F4254BBD9D004E3FD8 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		3CB812F5254BBD9D004E3FD8 /* ScrollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +128,7 @@
 				3C3073D5252EAEDC0075AF72 /* second */,
 				3CB812F1254BBC39004E3FD8 /* uiScrollView */,
 				3CAA71EC254FA9D0008FBEEE /* uiTableView */,
+				3CAA722D254FF40C008FBEEE /* OriginalDelegateView */,
 				3C307392252DB3740075AF72 /* AppDelegate.swift */,
 				3C307398252DB3770075AF72 /* Assets.xcassets */,
 				3C30739D252DB3770075AF72 /* LaunchScreen.storyboard */,
@@ -195,6 +200,15 @@
 				3CAA71FB254FB83E008FBEEE /* TableViewCell.xib */,
 			);
 			path = uiTableView;
+			sourceTree = "<group>";
+		};
+		3CAA722D254FF40C008FBEEE /* OriginalDelegateView */ = {
+			isa = PBXGroup;
+			children = (
+				3CAA722E254FF449008FBEEE /* OriginalDelegateView.swift */,
+				3CAA7239254FF48C008FBEEE /* OriginalDelegateView.xib */,
+			);
+			path = OriginalDelegateView;
 			sourceTree = "<group>";
 		};
 		3CB812F1254BBC39004E3FD8 /* uiScrollView */ = {
@@ -313,6 +327,7 @@
 				3C30739F252DB3770075AF72 /* LaunchScreen.storyboard in Resources */,
 				3C3073DB252ECABB0075AF72 /* FirstViewController.xib in Resources */,
 				3C3073DF252ECB870075AF72 /* SecondViewController.xib in Resources */,
+				3CAA723A254FF48C008FBEEE /* OriginalDelegateView.xib in Resources */,
 				3CB812F7254BBD9D004E3FD8 /* ScrollViewController.xib in Resources */,
 				3CAA71FD254FB83E008FBEEE /* TableViewCell.xib in Resources */,
 				3C3073D3252DC2F30075AF72 /* MainViewController.xib in Resources */,
@@ -345,6 +360,7 @@
 			files = (
 				3C3073DE252ECB870075AF72 /* SecondViewController.swift in Sources */,
 				3CAA71EF254FAA21008FBEEE /* TableViewController.swift in Sources */,
+				3CAA722F254FF449008FBEEE /* OriginalDelegateView.swift in Sources */,
 				3C3073DA252ECABB0075AF72 /* FirstViewController.swift in Sources */,
 				3CB812F6254BBD9D004E3FD8 /* ScrollViewController.swift in Sources */,
 				3C307393252DB3740075AF72 /* AppDelegate.swift in Sources */,

@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="sample_app" customModuleProvider="target">
             <connections>
+                <outlet property="contentsView" destination="J2e-tG-7IJ" id="wgb-Vk-ag7"/>
                 <outlet property="secondButton" destination="ANZ-Va-Hof" id="jLJ-0F-yWf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -22,6 +24,14 @@
                 <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J2e-tG-7IJ" userLabel="Contents View">
                     <rect key="frame" x="0.0" y="198" width="414" height="500"/>
                     <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pjj-gs-UEs" userLabel="Custom View" customClass="OriginalDelegateView" customModule="sample_app" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="500"/>
+                            <viewLayoutGuide key="safeArea" id="cYu-H6-noH"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="500" id="Rcb-G7-FUe"/>
+                            </constraints>
+                        </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MainViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9I-QA-2C0">
                             <rect key="frame" x="122" y="40" width="170" height="36"/>
                             <constraints>
@@ -32,9 +42,9 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Hy-48-cYL" userLabel="First Button">
-                            <rect key="frame" x="157" y="328" width="100" height="36"/>
-                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Hy-48-cYL" userLabel="First Button">
+                            <rect key="frame" x="157" y="252" width="100" height="36"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="36" id="jP8-Mc-dC7"/>
                                 <constraint firstAttribute="width" constant="100" id="syu-1t-Kdd"/>
@@ -42,15 +52,15 @@
                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                             <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                             <state key="normal" title="Firstへ">
-                                <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
                             </state>
                             <connections>
                                 <action selector="clickFirstButton:" destination="-1" eventType="touchDown" id="aQw-Xx-4SA"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANZ-Va-Hof" userLabel="Second Button">
-                            <rect key="frame" x="157" y="404" width="100" height="36"/>
-                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANZ-Va-Hof" userLabel="Second Button">
+                            <rect key="frame" x="157" y="328" width="100" height="36"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="100" id="4VV-6D-1te"/>
                                 <constraint firstAttribute="height" constant="36" id="IgG-Tf-Zl0"/>
@@ -58,30 +68,64 @@
                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                             <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                             <state key="normal" title="Secondへ">
-                                <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
                             </state>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uda-xl-vKD" userLabel="Delegate Button">
+                            <rect key="frame" x="157" y="404" width="100" height="36"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="DWN-oo-2ir"/>
+                                <constraint firstAttribute="height" constant="36" id="g2k-oa-eEy"/>
+                            </constraints>
+                            <state key="normal" title="Delegateへ">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="clickDelegateButton:" destination="-1" eventType="touchUpInside" id="50i-Cd-xEq"/>
+                            </connections>
+                        </button>
                     </subviews>
+                    <viewLayoutGuide key="safeArea" id="a9O-mJ-9t4"/>
                     <constraints>
                         <constraint firstItem="r9I-QA-2C0" firstAttribute="centerX" secondItem="J2e-tG-7IJ" secondAttribute="centerX" id="5JE-V7-1OI"/>
+                        <constraint firstItem="Pjj-gs-UEs" firstAttribute="trailing" secondItem="a9O-mJ-9t4" secondAttribute="trailing" id="85s-Ir-t12"/>
                         <constraint firstItem="r9I-QA-2C0" firstAttribute="top" secondItem="J2e-tG-7IJ" secondAttribute="top" constant="40" id="Dge-xU-Qi5"/>
                         <constraint firstAttribute="height" constant="500" id="FCz-u4-67H"/>
-                        <constraint firstItem="ANZ-Va-Hof" firstAttribute="bottom" secondItem="a9O-mJ-9t4" secondAttribute="bottom" constant="-60" id="KCM-rT-Ufc"/>
+                        <constraint firstItem="Pjj-gs-UEs" firstAttribute="leading" secondItem="a9O-mJ-9t4" secondAttribute="leading" id="HiR-CM-HaV"/>
+                        <constraint firstItem="ANZ-Va-Hof" firstAttribute="bottom" secondItem="Uda-xl-vKD" secondAttribute="top" constant="-40" id="KCM-rT-Ufc"/>
+                        <constraint firstItem="Pjj-gs-UEs" firstAttribute="top" secondItem="J2e-tG-7IJ" secondAttribute="top" id="T1G-Ja-CkH"/>
+                        <constraint firstAttribute="bottom" secondItem="Uda-xl-vKD" secondAttribute="bottom" constant="60" id="hgk-yD-d4P"/>
+                        <constraint firstItem="Uda-xl-vKD" firstAttribute="centerX" secondItem="J2e-tG-7IJ" secondAttribute="centerX" id="j8X-wQ-45v"/>
+                        <constraint firstAttribute="bottom" secondItem="Pjj-gs-UEs" secondAttribute="bottom" id="kQK-9m-JP8"/>
                         <constraint firstItem="0Hy-48-cYL" firstAttribute="bottom" secondItem="ANZ-Va-Hof" secondAttribute="top" constant="-40" id="n89-YA-9GY"/>
                         <constraint firstItem="ANZ-Va-Hof" firstAttribute="centerX" secondItem="J2e-tG-7IJ" secondAttribute="centerX" id="noe-bJ-Mef"/>
                         <constraint firstItem="0Hy-48-cYL" firstAttribute="centerX" secondItem="J2e-tG-7IJ" secondAttribute="centerX" id="ymi-Eh-tAD"/>
                     </constraints>
-                    <viewLayoutGuide key="safeArea" id="a9O-mJ-9t4"/>
                 </view>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="J2e-tG-7IJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HDP-YH-Tef"/>
-                <constraint firstItem="J2e-tG-7IJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ScK-dB-xTR"/>
+                <constraint firstItem="J2e-tG-7IJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Tl4-ze-cOX"/>
                 <constraint firstItem="J2e-tG-7IJ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="o7X-rF-tm5"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
